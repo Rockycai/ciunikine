@@ -9,7 +9,6 @@ import (
 
 func NewSshClient(ip string, port int, username, password, privateKey, passphrase string) (*ssh.Client, error) {
 	var authMethod ssh.AuthMethod
-
 	if username == "-" || username == "" {
 		username = "root"
 	}

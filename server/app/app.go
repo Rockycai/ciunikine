@@ -26,7 +26,7 @@ func Run() error {
 
 	app.Server = setupRoutes()
 
-	app.Server.Start(":8080")
+	app.Server.Start(":8000")
 
 	return nil
 }
